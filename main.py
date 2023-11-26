@@ -1,6 +1,8 @@
 import asyncio
 import websockets
-from image_handler import handle_image
+from image_handler import handle_image, init as init_image_handler
+
+init_image_handler()
 
 async def handle_websocket(websocket, path):
     # This function will be called whenever a new WebSocket connection is established
